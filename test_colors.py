@@ -23,7 +23,7 @@ bar_matrix4 = (np.random.random((height_vbar, width_vbar)) > 0.5) * 2 - 1
 
 #create a window
 #mywin = visual.Window([1024,768], monitor="testMonitor", units="deg", blendMode='add', screen=1, useFBO=False, winType='pyglet')
-mywin = visual.Window([1600,768], monitor="testMonitor", units="deg", blendMode='add', screen=1, useFBO=True, winType='pyglet')
+mywin = visual.Window([1024,768], monitor="testMonitor", units="deg", blendMode='add', screen=1, useFBO=True, winType='pyglet')
 
 #create some stimuli
 dotsize = 10
@@ -89,9 +89,9 @@ while True:
     timer.complete()
     dots1.draw()
 
-    hue_text.draw()
-    sat_text.draw()
-    val_text.draw()
+    #hue_text.draw()
+    #sat_text.draw()
+    #val_text.draw()
 
     timer.start(framelength)
     keys = event.getKeys(['up', 'down', 'space', 'a', 's', 'd', 'f', 'z','x','c','v'])
